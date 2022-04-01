@@ -1,0 +1,286 @@
+/*  Estilos predefinidos solo en esta pagina */
+
+.hrTitle
+{
+    width: 250px;
+    border-color: var(--amarillo);
+    margin-bottom: 20px;
+}
+
+
+/*  Zona de Prensa */
+
+.container
+{
+    background-color: #fff;
+    padding:50px;
+}
+
+.container form
+{
+    overflow: hidden;
+    max-height: 0;
+    text-align: justify;
+    transition: all 0.2s ease-in;
+    width: 90%;
+}
+
+.container p
+{
+    overflow: hidden;
+    max-height: 0;
+    text-align: justify;
+    transition: all 0.2s ease-in;
+    width: 90%;
+}
+
+.pestaña a 
+{
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    color: #000;
+}
+
+.container a:hover
+{
+    color: var(--amarillo);
+}
+
+
+.pestaña
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    border: 1px solid black;
+    padding-left: 18px;
+    margin: 10px 0px;
+    border-radius: 15px;
+}
+
+.pestaña i 
+{
+    font-size: 2rem;
+}
+
+section:target p 
+{
+    max-height: 300px;
+    padding: 10px;
+}
+
+section:target form
+{
+    max-height: 960px;
+    padding: 10px;
+}
+  
+#contact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 0px 30px 20px;
+}
+
+#contact .inputs input
+{
+    width: 655px;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    border: 1px solid var(--azulCorporativo);
+}
+
+.inputs
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact textarea
+{
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    border: 1px solid var(--azulCorporativo);
+}
+
+#contact input::placeholder
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding-left: 8px;
+}
+
+label 
+{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin: 10px 0px 0px 10px;
+}
+
+label a 
+{
+    margin-left: 3px;
+    text-decoration: none;
+    color: var(--azulCorporativo);
+    font-weight: bold;
+}
+
+/*  Reseteo del input checkbox y de sus estilos predefinidos */
+
+input[type="checkbox" i] 
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+textarea::placeholder
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+#menu1 input:focus
+{
+    border-style: none;
+}
+
+#menu1 textarea:focus
+{
+    border-style: none;
+}
+
+.btnMore
+{
+    border: 1px solid var(--azulCorporativo);
+    border-top-right-radius: 20px;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.btnMore a{
+    font-size: 20px;
+    padding: 0 !important;
+}
+
+#contact .mensaje
+{
+    margin-top: 20px;
+}
+
+#menu2 p 
+{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#menu2 span
+{
+    color: var(--azulCorporativo);
+    font-weight: 600;
+}
+
+.textoAcreditaciones a
+{
+    text-decoration: none;
+    color: var(--azulCorporativo);
+}
+
+.textoAcreditaciones a:hover
+{
+    color: var(--amarillo);
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+
+/* MEDIDAS MENU NAV Y FOOTER DESKTOP O LAPTOP GRANDE*/
+
+/* @media only screen and (max-width: 1500px) {
+ 
+    No se aplica responsive en esta medida
+  
+} */
+
+
+
+/*  MEDIDAS INTERMEDIAS ENTRE DESKTOP Y TABLET*/
+
+@media only screen and (max-width: 1150px)
+{
+    section:target p 
+    {
+        max-height: 700px;
+    }
+}
+
+/* TABLET*/
+
+@media only screen and (max-width: 768px){
+    .container
+    {
+        padding: 30px;
+    }
+    .pestaña 
+    {
+        height: 50px;
+    }
+    .pestaña a 
+    {
+        font-size: 1.6rem;
+    }
+    section:target p 
+    {
+        padding: 10px 0px;
+        font-size: 0.9em;
+        width: 95%;
+        max-height: 629px;
+    }
+    label 
+    {
+        margin: 10px 0px 0px 0px;
+    }
+    .textoAcreditaciones
+    {
+        font-size: 1em !important;
+    }
+    #contact .inputs input 
+    {
+        width: 496px;
+    }
+    #contact .inputs input 
+    {
+        width: 330px;
+    }
+    section:target p 
+    {
+        font-size: 0.8em;
+    }
+    label 
+    {
+        flex-wrap: wrap;
+    }
+}
+
+/* MOVIL GRANDE */
+  
+@media only screen and (max-width: 501px) {
+    .container
+    {
+        padding: 20px;
+    }
+} 
+

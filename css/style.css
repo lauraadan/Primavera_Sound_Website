@@ -1,0 +1,623 @@
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+/*  ESTILOS DEL BODY EN TODAS LAS PAGINAS */
+
+body
+{
+    background:  url("../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    /* Para quitar barra horizontal eje X y que no desborde contenido en ese eje*/
+    overflow-x: hidden;
+}
+
+
+/* ZONA DE COLORES PREDEFINIDOS */
+:root
+{
+    --azulCorporativo: #2A3141;
+    --amarillo: #F8AF58;
+    --salmon: #F49F88;
+    --beige: #FDE2D2;
+    --azul: #67B2B5;
+    --verde: #69B59D;
+    --hover: #4a7b6c;
+    --hover2: #F8AF58;
+}
+
+/* ZONA DEL BOTON SCROLL EN TODAS LAS PAGINAS */
+
+#top
+{
+	position: fixed;
+	bottom: 40px;
+	right: 50px;
+  z-index: 1000000;
+  display: none;
+}
+
+#top i
+{
+ font-size: 3.8em;
+ color: #67B2B5;
+}
+
+/* ESTILO PREDEFINIDO DEL HEADER + MENU NAV EN TODAS LAS PAGINAS */
+
+#navbar
+{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 1s;
+  z-index: 10000;
+}
+
+#barraMenu
+{
+
+  background-color: var(--azulCorporativo);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+#menu 
+{
+    list-style-type: none;
+    display: flex;
+}
+
+#menu ul li 
+{
+ display: inline-block;
+ transition: all ease-in-out 250ms;
+}
+
+.hide 
+{
+  font-size: 1.5em;
+  color: var(--amarillo);
+  cursor: pointer;
+  display: none;
+}
+
+.elemMenu > a
+{
+	font-size: 1.3rem;
+	color: white;
+	text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  margin-right: 25px;
+  padding-bottom: 3px;
+}
+
+.elemMenu > a:hover
+{
+  color: var(--amarillo);
+}
+
+.elemMenu .active
+{
+  border-bottom: 2px solid var(--amarillo);
+}
+
+.entradas
+{
+  position: relative;
+  left: 50%;
+  list-style-type: none;
+}
+
+.btnEntradas
+{
+    border: 2px solid white;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    text-decoration: none;    
+}
+
+.btnEntradas:hover
+{
+  border: 2px solid var(--hover2);
+}
+
+.elemBtn > a
+{
+	font-size: 1.3rem;
+	color: white;
+	text-decoration: none;
+}
+
+.elemBtn > a:hover
+{
+	color: var(--hover2);
+  font-weight: 500;
+}
+
+/* ZONA DEL BANNER EN TODAS LAS PAGINAS MENOS EN HOME */
+
+.banner
+{
+    height: 530px;
+    background-image: url("../img/background_banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.banner h1
+{
+    z-index: 100000;
+    font-size: 5em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hrBanner
+{
+    width: 200px;
+    border-color: var(--amarillo);
+    font-size: 10px;
+    background: var(--amarillo);
+    height: 3px;
+}
+
+.contenedorBanner
+{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  top: 40%;
+  left: 40%;
+}
+
+/*  PREDEFINIDO BOTÓN "LEER MÁS..." */
+
+.btnMore
+{
+    border: 2px solid var(--azulCorporativo);
+    padding: 10px;
+    border-top-right-radius: 20px;
+    margin-top: 30px;
+    background-color: transparent;
+}
+
+.btnMore a 
+{
+  font-size: 1.2rem;
+	color: #000;
+	text-decoration: none;
+}
+
+.btnMore:hover 
+{
+    border: 2px solid var(--hover);
+}
+
+.btnMore a:hover 
+{
+    color: var(--hover);
+}
+
+/* ZONA DEL FOOTER */
+
+#footer
+{
+  background-color: #293040;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 0px 0px 50px 50px;
+}
+
+.contain
+{
+  width: 100%;
+}
+
+.footer .col 
+{
+  width: 350px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.titleNewsletter
+{
+  margin: 20px 0px 10px 0px;
+}
+
+.footer .col .titleCol 
+{
+  margin: 0;
+  padding: 0;
+  padding: 60px 0px 8px 0px;
+}
+
+
+.footer .col h1 
+{
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 23px;
+  color: var(--amarillo);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+
+.footer .col ul 
+{
+  list-style-type: none;
+}
+
+.footer .col ul li a 
+{
+  color: var(--beige);
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: normal;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  text-decoration: none;
+}
+
+.footer .col ul li 
+{
+  padding: 5px 0px 5px 0px;
+}
+
+.social ul 
+{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social a 
+{
+  display: inline-block;
+  padding: 0px !important;
+  font-size: 1.5rem !important;
+}
+
+.social ul li a:hover 
+{
+color: var(--hover2);
+cursor: pointer;
+transition: .2s;
+-webkit-transition: .2s;
+-moz-transition: .2s;
+}
+
+.footer .col ul li a:hover 
+{
+  color: var(--hover2);
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.contain .social
+{
+  position: relative;
+  left: 10%;
+}
+
+.hrFooter
+{
+  width: 130px;
+  margin-bottom: 20px;
+  border-color: var(--amarillo);
+}
+
+.footer .newsletter
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer .suscribir
+{
+  width: 200px;
+  height: 35px;
+}
+
+.footer .btnSuscribir
+{
+  background-color: transparent;
+  border: 1px solid var(--amarillo);
+  border-color: none !important;
+  padding: 10px;
+  color: var(--amarillo);
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.footer .btnSuscribir:hover
+{
+  border: 1px solid var(--hover);
+  color: var(--hover);
+}
+
+/* MEDIA QUERIES */
+
+
+
+/* MEDIDAS MENU NAV Y FOOTER DESKTOP O LAPTOP GRANDE*/
+
+@media only screen and (max-width: 1500px) {
+
+  /* Menu nav */
+  .entradas 
+  {
+    left: 35%;
+  }
+
+  /* Responsive banner */
+  .contenedorBanner
+  {
+    left: 30%;
+  }
+
+  /* Responsive Footer */
+  #footer
+  {
+    padding-bottom: 50px;
+  }
+  #footer .contain
+  {
+    display: flex;
+  }
+  .contain .social 
+  {
+    left: 0%;
+  }
+  .social i 
+  {
+    font-size: 1.3em;
+  }
+}
+
+
+/*  MEDIDAS INTERMEDIAS ENTRE DESKTOP Y TABLET*/
+
+@media only screen and (max-width: 1150px){
+
+/* Responsive barra menu */
+  #barraMenu
+  {
+    padding: 0px 30px;
+  }
+  .entradas
+  {
+    left: 5%;
+  }
+  .btnEntradas
+  {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+  }
+  .elemMenu > a 
+  {
+    font-size: 1.1rem;
+    margin-right: 18px;
+  }
+  .elemBtn > a 
+  {
+    font-size: 1.1rem;
+  }
+
+/* Responsive footer */
+  .footer .col h1 
+  {
+      font-size: 16px;
+  }
+  .footer .col ul li a 
+  {
+    font-size: 16px;
+  }
+
+  .contain
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+/* TABLET */
+
+@media only screen and (max-width: 768px){
+
+  /*  Responsive menu nav */
+  #barraMenu
+  {
+    height: 180px;
+    text-align: left;
+    background-color: transparent;
+  }
+  .entradas
+  {
+    left:10%;
+  }
+  .elemMenu > a 
+   {
+    font-size: 1.1em;
+  }
+  .elemBtn > a 
+  {
+    font-size: 1.1em;
+  }
+  .elemMenu .active
+  {
+    color: var(--hover2);
+    border-bottom: none;
+  }
+  .btnEntradas
+  {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+  }
+  #menu ul li 
+  {
+    width: 100%;
+    text-align: left;
+  }
+  #barraMenu ul 
+  {
+    display: none;
+  }
+  .hide
+  {
+    display: block;
+    font-size: 2em;
+    margin: auto;
+  }
+  
+  /* Responsive banner */
+  .contenedorBanner
+  {
+    left: 20%;
+  }
+  .banner h1 
+  {
+    font-size: 3.8em;
+  }
+  .banner .hrBanner
+  {
+    width: 350px;
+  }
+
+  /* Responsive footer */
+  #footer 
+  {
+    height: 100%;
+    padding: 0px 0px 50px 30px;
+  }
+  .contain
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .col ul li a 
+  {
+    font-size: 20px;
+  }
+  .footer .col h1 
+  {
+    font-size: 20px;
+  }
+  .footer .col 
+  {
+    width: 100%;
+  }
+  /* Activacion del boton scroll a partir de -768px */
+  #top
+  {
+    display: block;
+  } 
+}
+
+/* MOVIL GRANDE */
+  
+@media only screen and (max-width: 501px) {
+
+  /*Responsive nav menu*/
+  #barraMenu
+  {
+    height: 180px;
+    text-align: left;
+    background-color: transparent;
+  }
+  .entradas
+  {
+    left:10%;
+  }
+  .elemMenu > a 
+   {
+    font-size: 0.9em;
+  }
+  .elemBtn > a 
+  {
+    font-size: 0.9em;
+  }
+  .btnEntradas
+  {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+  }
+
+  #menu ul li 
+  {
+    width: 100%;
+    text-align: left;
+  }
+  #barraMenu ul 
+  {
+    display: none;
+  }
+  .hide
+  {
+    display: block;
+    font-size: 2.2em;
+    margin: auto;
+  }
+  
+  /* Responsive banner */
+  .banner h1 
+  {
+    font-size: 2.8em;
+  }
+  .banner .hrBanner
+  {
+    width: 250px;
+    height: 2px;
+  }
+  .contenedorBanner
+  {
+    left: 15%;
+  }
+
+  /* Responsive footer */
+  .contain
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer 
+  {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  .footer .col ul li a 
+  {
+    font-size: 17px;
+  }
+  #top i
+  {
+    font-size: 3em;
+  } 
+  
+}
+

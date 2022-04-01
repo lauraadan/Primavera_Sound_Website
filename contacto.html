@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Zona de metadatos  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto realizado dentro de la asignatura de Proyectos de Gráfica Interactiva, Escola Llotja">
+    <meta name="keywords" content="primaverasound, website, festival, Barcelona, web">
+    <meta name="author" content="Laura Adán">
+    <meta name="copyright" content="Laura Adán">
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <!-- Hoja de estilos predefinidos (botones, header, footer, titulos...) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Hoja de estilos de la página -->
+    <link rel="stylesheet" href="css/contacto.css">
+    <!--  Google Fonts para Roboto Mono en banner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <!-- Conexion a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="js/menuOculto.js"></script>
+    <script src="js/btnScroll.js"></script>
+    <!-- Script de Font Awesome para iconos -->
+    <script src="https://kit.fontawesome.com/44915d7dee.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="img/logoNuevo_02.png"/>
+    <title>Primavera Sound | Contacto</title>
+</head>
+<body>
+
+<!-- ZONA DEL BOTON SCROLL -->
+
+<div id="top">
+    <a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
+</div>
+
+<!-- ZONA DEL NAVEGADOR -->
+
+<header id="navbar">
+
+    <nav id="barraMenu">
+        <ul id="menu">
+            <li class="elemMenu"><a href="home.html">Home</a></li>
+            <li class="elemMenu"><a href="aboutUs.html">About PS</a></li>
+            <li class="elemMenu"><a href="programacion.html">Programación</a></li>
+            <li class="elemMenu"><a href="prensa.html">Prensa</a></li>
+            <li class="elemMenu"><a href="form-login.html">Foro</a></li>
+            <li class="elemMenu"><a href="contacto.html" class="active">Contacto</a></li>           
+        </ul>
+
+        <ul class="entradas">
+            <li class="elemBtn"><a href="entradas.html" class="btnEntradas">TICKETS</a></li>
+        </ul>
+
+        <div class="hide">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>   
+
+</header>
+
+<!-- ZONA DE BANNER SUPERIOR -->
+<section class="banner">
+    <div class="contenedorBanner">
+        <h1>Contacto</h1>
+        <hr class="hrBanner">
+    </div>
+</section>
+
+<!--  ZONA DE FORMULARIO DE CONTACTO -->
+
+<section id="contacto">
+
+    <form class="contact" action="" method="post">
+        <h1>Datos de contacto</h1>
+        <hr class="hrTitle">
+
+        <div class="datosContacto">
+            
+          <input placeholder="Tu nombre" type="text" required>
+          <input placeholder="Tus apellidos" type="text" required>
+          <input placeholder="Tu correo electrónico" type="email" required>
+          <input placeholder="Asunto" type="text" required>
+
+        </div>
+
+        <h1 class="mensaje">Tu mensaje</h1>
+        <hr class="hrTitle">
+
+        <textarea placeholder="Escribe aquí tu mensaje..." required></textarea>
+
+        <p class="lodp"><i> Te informamos que los datos personales que facilites pasarán a formar parte de un fichero 
+        responsabilidad de PRIMAVERA SOUND S.L. para gestionar tu petición. <br> Puedes ejercer los derechos 
+        de acceso, rectificación, cancelación u oposición al tratamiento de tus datos en el e-mail señalado 
+        lopd@primaverasound.com o en el domicilio sito en C/ Roc Boronat 142, 3ª, 08018 de Barcelona.</i></p>
+        <label><input type="checkbox" id="checkbox">He leído y acepto los <a href="https://www.primaverasound.com/es/primavera-sound-festival-terms-and-conditions" target="_blank">términos y condiciones de uso.</a></label><br>
+        <button class="btnMore" name="submit" type="submit"onclick="alertEnviar();"><a href="">Enviar</a></button>  
+
+      </form>
+
+
+</section>
+
+
+
+<!--  ZONA DEL FOOTER -->
+
+<section class="footer" id="footer">
+  <div class="contain">
+    
+    <div class="col">
+        <h1 class="titleCol">Primavera Sound</h1>
+        <hr class="hrFooter">
+        <ul>
+            <li><a href="https://www.primaverasound.com/es/barcelona" target="_blank">Primavera Sound Barcelona</a></li>
+            <li><a href="https://www.primaverasound.com/es/los-angeles" target="_blank">Primavera Sound L.A</a></li>
+            <li><a href="https://www.primaverasound.com/es/santiago" target="_blank">Primavera Sound Santiago de Chile</a></li>
+            <li><a href="https://www.primaverasound.com/es/buenos-aires" target="_blank">Primavera Sound Buenos Aires</a></li>
+            <li><a href="https://www.primaverasound.com/es/sao-paulo" target="_blank">Primavera Sound Sao Paulo</a></li>
+        </ul>
+    </div>
+    
+    <div class="col">
+        <h1 class="titleCol">Servicios</h1>
+        <hr class="hrFooter">
+        <ul>
+            <li><a href="https://www.primaverasound.com/es/tours" target="_blank">Primavera Tours</a></li>
+            <li><a href="https://www.primaverasound.com/es/radio" target="_blank">Radio Primavera Sound</a></li>
+            <li><a href="https://www.primaverasound.com/es/primavera-pro" target="_blank">Primavera Pro</a></li>
+            <li><a href="https://www.primaverasound.com/es/primavera-labels" target="_blank">Primavera Labels</a></li>
+            <li><a href="https://wearevampire.com/" target="_blank">Vampire Studio</a></li>
+        </ul>
+    </div>
+
+    <div class="col">
+        <h1 class="titleCol">Políticas</h1>
+        <hr class="hrFooter">
+        <ul>
+            <li><a href="https://www.primaverasound.com/es/primavera-sound-festival-terms-and-conditions" target="_blank">Aviso Legal</a></li>
+            <li><a href="https://www.primaverasound.com/es/primavera-sound-festival-terms-and-conditions" target="_blank">Términos y condiciones</a></li>
+            <li><a href="https://www.primaverasound.com/es/cookies-policy" target="_blank">Politica de Cookies</a></li>
+            <li><a href="https://www.primaverasound.com/es/privacy-policy" target="_blank">Politica de Privacidad</a></li>
+            <li><a href="https://www.primaverasound.com/es/user-register-conditions-for-primavera-sound" target="_blank">Politica de registro</a></li>
+        </ul>
+    </div>
+    
+
+    <div class="col social">
+        <h1 class="titleCol">Social</h1>
+        <hr class="hrFooter">
+        <ul>
+            <li><a href="https://twitter.com/Primavera_Sound" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/primaverasoundfestivals" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/primavera_sound/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/c/primaverasound" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://open.spotify.com/user/primaverasoundfestival?si=Gz9-CxONSESlF_art5K4rg&nd=1" target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
+        </ul>
+        <div class="newsletter">
+            <h1 class="titleNewsletter">Suscríbete a nuestra newsletter</h1>
+            <hr class="hrFooter">
+            <input class="suscribir" type="text" placeholder=" Introduce aquí tu email">
+            <button class="btnSuscribir" onclick="alertSuscribirse();">Suscribirme</button>
+         </div>
+    </div>
+  </div>
+</section>
+
+<!-- Script para Alert boton Footer - Suscribirse -->
+<script>
+    function alertSuscribirse(){
+        alert("¡Te has suscrito correctamente!");
+    }
+</script>
+
+<!-- Script para Alert boton Enviar - Formulario -->
+<script>
+    function alertEnviar(){
+        alert("¡El mensaje ha sido enviado correctamente");
+    }
+</script>
+
+<!-- Script de menu nav responsive -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/menu_nav_responsive.js"></script>
+
+
+</body>
+</html>

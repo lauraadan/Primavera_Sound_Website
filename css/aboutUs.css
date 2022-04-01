@@ -1,0 +1,384 @@
+
+
+/* Zona de estilos predefinidos solo en esta pagina */
+
+.hrTitle
+{
+    width: 400px;
+    border-color: var(--amarillo);
+    margin-bottom: 5px;
+}
+ 
+
+/*  Texto predefinido*/
+
+.infoTexto
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 70px;
+}
+
+.infoTextoTitulo h1
+{
+    font-size: 2em;
+}
+
+.infoTextoTitulo h3, h4
+{
+    font-weight: lighter !important;
+    font-size: 20px;
+}
+
+.infoTextoParrafo p, h3
+{
+    font-size: 20px;
+}
+
+
+/* ZONA DE ABOUT US */
+
+#aboutUs
+{
+    height: auto;
+    background-color: #fff;
+    padding: 80px 50px;
+    margin: 0px 50px;
+}
+
+/* Zona de Historia PS */
+
+.historiaPS
+{
+    margin-bottom: 30px;
+}
+
+/*  Zona de Localización del evento*/
+
+.mapaLocalizacion iframe
+{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.infoTextoMetodos
+{
+    margin: 50px 50px 0px 0px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.infoTextoMetodos a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.infoTextoMetodos a:hover
+{
+    text-decoration: underline;
+    color: var(--verde);
+}
+
+.infoTextoMetodos p 
+{
+    margin: 10px 0px;
+}
+
+.tituloMetodo
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.infoLocalizacion
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.horariosLlegar
+{
+    font-weight: bold;
+    margin-top: 50px !important;
+}
+
+.metodosLlegar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.textoMapa
+{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Zona de normativa covid */
+
+.infoCovid
+{
+    margin-bottom: 30px;
+}
+
+/*  Zona de alojamiento  */
+
+.infoTitulo
+{
+    margin-bottom: 30px;
+}
+
+.textoAlojamiento
+{
+    width: 1689px;
+    margin-top: 50px;
+}
+
+.infoAlojamiento
+{
+    display: flex;
+    flex-direction: column !important;
+}
+
+.tituloWeekend 
+{
+    margin-top: 50px;
+    font-size:2.3rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+ .subtituloWeekend
+{
+    color: var(--azulCorporativo);
+    font-size: 1.7rem !important;
+    margin-top: 0px !important;
+    margin-left: 10px;
+}
+
+.weekend1
+{
+    width: 100%;
+}
+
+.imgAlojamiento01
+{
+    background-image: url("../img/about/alojamiento01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 77vh;
+    padding-bottom: 3rem;
+}
+
+.imgAlojamiento02
+{
+    background-image: url("../img/about/alojamiento02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 77vh;
+    padding-bottom: 3rem;
+}
+
+.imgAlojamiento03
+{
+    background-image: url("../img/about/alojamiento03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 77vh;
+    padding-bottom: 3rem;
+}
+
+.contImgAlojamiento
+{
+    color: #fff;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 50px 50px;
+}
+
+.contenedorWeekends
+{
+    width: 100%;
+    margin-top: -50px;
+}
+
+.contImgAlojamiento .btnMore
+{
+    margin-bottom: 30px;
+    border: 2px solid #fff;
+}
+
+.contImgAlojamiento .btnMore a
+{
+    color: #fff;
+}
+
+.contImgAlojamiento .btnMore a:hover
+{
+    color: var(--hover2);
+}
+
+.contImgAlojamiento .btnMore:hover
+{
+    border: 2px solid var(--hover2);
+}
+
+.contImgAlojamiento h1 
+{
+    font-size: 3rem;
+    width: 700px;
+}
+
+
+/* MEDIA QUERIES */
+
+
+
+/* DESKTOP O LAPTOP GRANDE*/
+
+/* No se hace responsive de medidas desktop o laptop grande porque respeta la 
+estructura al hacerse responsive */
+
+
+/*  MEDIDAS INTERMEDIAS ENTRE DESKTOP Y TABLET*/
+
+@media only screen and (max-width: 1150px){
+    .metodosLlegar 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .textoAlojamiento
+    {
+        width: 100%;
+    }
+    .tituloWeekend 
+    {
+        font-size: 1.6rem;
+        display: inline-block;
+    }
+    .subtituloWeekend
+    {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .imgAlojamiento01, .imgAlojamiento02, .imgAlojamiento03
+    {
+        height: 50vh;
+    }
+    .contImgAlojamiento 
+    {
+        width: 100%;
+    }
+    .contImgAlojamiento h1 
+    {
+        font-size: 1.8rem;
+        width: 80%;
+    }
+    .contImgAlojamiento .btnMore a 
+    {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* TABLET*/
+
+@media only screen and (max-width: 768px){
+    #aboutUs
+    {
+        margin:  0px 20px;
+        padding: 80px 30px;
+    }
+
+    .infoTextoParrafo
+    {
+        width: 100%;
+    }
+    .infoTextoParrafo p, h3 
+    {
+        width: 100%;
+    }
+    .tituloWeekend 
+    {
+        margin-top: 72px;
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    .imgAlojamiento01, .imgAlojamiento02, .imgAlojamiento03
+    {
+        height: 44vh;
+    }
+    .contImgAlojamiento 
+    {
+        width: 100%;
+    }
+    .contImgAlojamiento h1 
+    {
+        font-size: 1.7rem;
+        width: 70%;
+    }
+    .contImgAlojamiento .btnMore a 
+    {
+        font-size: 1rem;
+    }
+}
+
+/* MOVIL GRANDE */
+  
+@media only screen and (max-width: 501px) {
+    .hrTitle
+    {
+        width: 300px;
+    }
+    .infoTextoTitulo h1 
+    {
+        font-size: 1.7em;
+    }
+    .infoTextoMetodos
+    {
+        margin: 10px 50px 0px 0px;
+    }
+    .tituloWeekend, .subtituloWeekend
+    {
+        font-size: 1.4rem !important;
+    }
+    .contImgAlojamiento
+    {
+        width: 90%;
+        padding: 0px 0px 50px 20px;
+    }
+    .contImgAlojamiento h1 
+    {
+        font-size: 1.5rem;
+    }
+    .imgAlojamiento01, .imgAlojamiento02, .imgAlojamiento03
+    {
+        padding-bottom: 0px;
+    }
+}
+
+
+
+
+
+

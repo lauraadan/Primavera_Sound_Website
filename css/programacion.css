@@ -1,0 +1,401 @@
+
+/* Zona de estilos predefinidos solo en esta pagina */
+
+.hrTitle
+{
+    width: 360px;
+    border-color: var(--amarillo);
+    margin-bottom: 5px;
+}
+
+.hrContenido
+{
+    width: 200px;
+    border-color: var(--amarillo);
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+/*  Texto predefinido*/
+
+.infoTexto
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 70px;
+}
+
+.infoTextoTitulo
+{
+    width: 926px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.infoTextoTitulo h1
+{
+    font-size: 2em;
+}
+
+.infoTextoTitulo h3, h4
+{
+    font-weight: lighter !important;
+}
+
+/* ZONA DE PROGRAMACION */
+
+#programacion
+{
+    height: auto;
+    background-color: #fff;
+    padding: 80px 50px;
+    margin: 0px 50px;
+}
+
+.contenedorProgramacion
+{
+    height: auto;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+/* Zona de pestañas dentro del contenedor Programacion */
+
+.t-container 
+{
+    margin: 0 auto;
+}
+
+.t-tabs, .t-contents 
+{
+    list-style-type: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.t-tabs li 
+{
+    color: #dedede;
+    padding: 0.5em 0.7em;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    font-size: 1.1em;
+    background: var(--azulCorporativo);
+    border-bottom: 0;
+    min-width: 40px;
+    margin-bottom: 0 !important;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.t-tabs li:hover 
+{
+    background-color: var(--amarillo);
+    color: var(--azulCorporativo);
+}
+
+.t-tabs li.selected 
+{
+    color:var(--azulCorporativo);
+    cursor: default;
+    background: var(--amarillo);
+}
+
+.t-contents 
+{
+    padding: 0 !important
+}
+
+.t-content 
+{
+    box-sizing: border-box;
+    width: 100%;
+    color: #b7b7b7;
+    line-height: 1.8em;
+    text-align: justify;
+    z-index: 1;
+    position: relative;
+    max-height: 0;
+    transition: max-height 0.5s ease 0s;
+    overflow: hidden;
+}
+
+.t-content.selected 
+{
+    max-height: 100vh;
+    transition: max-height 1.25s ease 0.5s;
+    border: 1px solid var(--azulCorporativo);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+/*  Contenido dentro de cada pestaña */
+
+.weekend1 .jueves02, .viernes03, .sabado04
+{
+    width: 100%;
+    height: 450px;
+}
+
+.weekend2 .jueves09, .viernes10, .sabado11
+{
+    width: 100%;
+    height: 500px;
+}
+
+.PSCiutat .domingo05, .lunes06, .martes07, .miercoles08, .domingo12
+{
+    width: 100%;
+    height: 370px;
+}
+
+ .domingo12 .contenido
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 60px;
+}   
+  
+.contenido 
+{
+    display: flex;
+    color: #000;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenidoInterior
+{
+    margin-top: 60px;
+}
+
+.contenidoInterior h1
+{
+    font-size: 1.7rem;
+}
+
+.contenidoInterior p 
+{
+    font-size: 1.4rem;
+}
+
+.contenidoInterior p span
+{
+    font-weight: 900;
+    color: var(--azulCorporativo);
+}
+
+
+/*  Zona de mapa */
+
+.descargarMapa a
+{
+    background-color: var(--azulCorporativo);
+    color: #dedede;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.descargarMapa a:hover
+{
+color: var(--hover2);
+}
+
+.titleMapa
+{
+    margin-bottom: 40px;
+}
+
+/* MEDIA QUERIES */
+
+/* MEDIDAS MENU NAV Y FOOTER DESKTOP O LAPTOP GRANDE*/
+
+@media only screen and (max-width: 1500px) {
+    .contenidoInterior h1 
+    {
+        font-size: 1.2rem;
+    }
+    .contenidoInterior p 
+    {
+        font-size: 1rem;
+    }
+}
+
+
+/*  MEDIDAS INTERMEDIAS ENTRE DESKTOP Y TABLET*/
+
+@media only screen and (max-width: 1150px){
+    #programacion
+    {
+        padding: 80px 30px;
+        margin: 0px 29px;
+    }
+    .infoTextoTitulo
+    {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    .infoTextoTitulo h1 
+    {
+        font-size: 1.8em;
+    }
+    .contenido 
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .t-tabs li 
+    {
+        padding: 0.6em;
+        font-size: 1em;
+        text-align: left;
+        width: 50%;
+    }
+    .t-tabs, .t-contents 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenidoInterior
+    {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .contenidoInterior h1 
+    {
+        font-size: 1.3rem;
+    }
+    .contenidoInterior p 
+    {
+        font-size: 1.3rem;
+    }
+    .weekend1 .jueves02, .viernes03, .sabado04
+    {
+        height: 700px;
+        margin: 30px;
+    }
+    .weekend2 .jueves09, .viernes10
+    {
+        height: 700px;
+        margin: 30px;
+    }
+    .weekend2 .sabado11 
+    {
+        height: 690px;
+        margin: 30px;
+    }
+    .PSCiutat .domingo05, .lunes06, .martes07, .miercoles08
+    {
+        height: 470px;
+        margin: 30px;
+    }
+    .PSCiutat .domingo12 
+    {
+        height: 280px;
+        margin: 30px;
+    }
+}
+
+
+
+/* TABLET*/
+
+@media only screen and (max-width: 768px){
+    #programacion
+    {
+        padding: 80px 30px;
+        margin: 0px 29px;
+    }
+    .infoTextoTitulo
+    {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    .infoTextoTitulo h1 
+    {
+        font-size: 1.8em;
+    }
+    .t-tabs li 
+    {
+        padding: 0.4em;
+        font-size: 1em;
+        text-align: left;
+        width: 95%;
+    }
+    .contenidoInterior
+    {
+        width: 95%;
+    }
+    .contenidoInterior h1 
+    {
+        font-size: 1.1rem;
+    }
+    .contenidoInterior p 
+    {
+        font-size: 1rem;
+    }
+}
+
+/* MOVIL GRANDE */
+  
+@media only screen and (max-width: 501px) {
+    #programacion 
+    {
+        padding: 80px 15px;
+        margin: 0px 20px;
+    }
+    .t-tabs li
+    {
+        width: 92%;
+    }
+    .contenido 
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contenidoInterior
+    {
+        margin-top: 20px;
+    }
+    .t-content.selected 
+    {
+        max-height: 380vh;
+    }
+    .weekend1 .jueves02, .viernes03, .sabado04
+    {
+        height: 1250px;
+    }
+    .weekend2 .jueves09, .viernes10
+    {
+        height: 1250px;
+    }
+    .weekend2 .sabado11 
+    {
+        height: 1250px;
+    }
+    .PSCiutat .domingo05, .lunes06, .martes07, .miercoles08
+    {
+        height: 880px;
+    }
+    .PSCiutat .domingo12 
+    {
+        height: 300px;
+    }
+    .domingo12 .contenido
+    {
+        margin-left: 0px;
+    }
+}
+
+
+

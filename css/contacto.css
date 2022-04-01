@@ -1,0 +1,193 @@
+/* Estilos predefinidos en esta pagina */
+
+.hrTitle
+{
+    width: 230px;
+    border-color: var(--amarillo);
+    margin-bottom: 20px;
+}
+
+/*  ZONA DE FORMULARIO DE CONTACTO */
+
+#contacto
+{
+    background-color: #fff;
+    padding: 80px 50px;
+}
+
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:20px;
+    width: 95%;
+}
+
+.datosContacto
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.contact input
+{
+    width: 100%;
+    height: 60px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    border: 1px solid var(--azulCorporativo);
+}
+
+
+.contact textarea
+{
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    border: 1px solid var(--azulCorporativo);
+    padding: 20px 0px 0px 20px;
+
+}
+
+.datosContacto input::placeholder
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding-left: 8px;
+}
+
+label 
+{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+label a 
+{
+    margin-left: 3px;
+    text-decoration: none;
+    color: var(--azulCorporativo);
+    font-weight: bold;
+}
+
+label a:hover
+{
+    color: var(--amarillo) !important;
+}
+
+
+
+/*  Reseteo del input checkbox y de sus estilos predefinidos */
+
+input[type="checkbox" i] 
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+textarea::placeholder
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.contact .mensaje
+{
+    margin-top: 20px;
+}
+
+.contact .lodp
+{
+    font-size: 15px;
+    margin: 20px 0px;
+}
+
+input:focus
+{
+    border-style: none;
+}
+
+textarea:focus
+{
+    border-style: none;
+}
+
+/* MEDIA QUERIES */
+
+
+
+/* MEDIDAS MENU NAV Y FOOTER DESKTOP O LAPTOP GRANDE*/
+
+/* @media only screen and (max-width: 1500px) {
+ 
+No se aplican medidas responsive en esta medida
+  
+}  */
+
+
+
+
+/*  MEDIDAS INTERMEDIAS ENTRE DESKTOP Y TABLET*/
+
+@media only screen and (max-width: 900px)
+{
+    .datosContacto 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* TABLET*/
+
+@media only screen and (max-width: 768px){
+    #contacto
+    {
+        padding: 50px 30px;
+    }
+    
+    .contact textarea 
+    {
+        width: 90%;
+    }
+    .contact .lodp 
+    {
+        width: 95%;
+    }
+}
+
+/* MOVIL GRANDE */
+  
+@media only screen and (max-width: 501px){
+    .contact
+    {
+        margin-left: 0px;
+    }
+    .contact input
+    {
+        margin: 3px 0px;
+    }
+    .contact textarea
+    {
+        width: 95%;
+    }
+    .contact .lodp 
+    {
+        font-size: 12px;
+    }
+    #checkbox 
+    {
+        margin-right: 5px !important;
+    }
+} 
+
+
+

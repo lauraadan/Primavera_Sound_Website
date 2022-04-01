@@ -1,0 +1,296 @@
+
+
+/*  Estilos predefinidos solo en esta pagina */
+
+.infoTextoTitulo
+{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.hrTitle
+{
+    width: 230px;
+    border-color: var(--amarillo);
+    margin-bottom: 5px;
+}
+
+
+.infoTextoTitulo span
+{
+    font-size: 27px;
+    font-weight: normal;
+}
+
+.btnComprar
+{
+    padding: 15px 20px;
+    border-top-right-radius: 20px;
+    margin-top: 30px;
+    background-color: var(--azulCorporativo);
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--amarillo);
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.btnComprar:hover 
+{
+    color: var(--salmon);
+}
+
+ 
+/*  Zona de entradas */
+
+#entradas
+{
+    height: auto;
+    background-color: #fff;
+    border: solid 50px #fff;
+    margin: 0px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+#entradas .cards
+{
+    margin: 80px 0px;
+    display: flex;
+    width: 259%;
+	height: 100%;
+    transition: margin 1s;
+}
+
+
+#entradas .entrada
+{
+    height: 760px;
+    width: 20%;
+    background-color: #eee9e6;
+    font-family: 'Roboto Mono', monospace;
+    padding: 20px;
+    box-shadow: 12px 0px 30px 11px rgb(171 170 170 / 50%);
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entrada .fa-solid
+{
+    font-size: 4em;
+    margin: 0 auto;
+    color: var(--salmon);
+}
+
+.entrada .titulo
+{
+    font-size: 2em;
+    color: var(--azulCorporativo);
+    margin: 13px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    height: auto;
+    width: 90%;
+    line-height: 35px;
+}
+
+.entrada .subtitulo
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+    height: 60px;
+}
+
+.hrEntrada
+{
+    width: 230px;
+    border-color: var(--amarillo);
+    margin: 20px 0px;
+}
+
+.entrada .precio
+{
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.entrada span 
+{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.entrada small
+{
+    font-size: 18px;
+}
+
+.precioPrecio
+{
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.entrada p 
+{
+    margin: 27px 0px;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    font-size: 1em;
+}
+
+.cards .arrow
+{
+    margin: auto;
+}
+
+.arrow #izquierda
+{
+    position: absolute;
+    left:1%;
+    font-size: 3.5rem;
+    color: var(--azulCorporativo);
+}
+
+.arrow #derecha
+{
+    position: absolute;
+    right: 1%;
+    font-size: 3.5rem;
+    color: var(--azulCorporativo);
+}
+
+/*  Resetear los estilos predefinidos de button */
+
+.arrow button 
+{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+
+/* MEDIDAS MENU NAV Y FOOTER DESKTOP O LAPTOP GRANDE*/
+
+ @media only screen and (max-width: 1500px) {
+     .hrTitle
+     {
+         width:190px;
+     }
+     .infoTextoTitulo
+     {
+         font-size: 23px;
+     }
+     .infoTextoTitulo span 
+     {
+        font-size: 21px;
+        font-weight: normal;
+    }
+    .entrada .titulo
+    {
+        font-size: 1.8em;
+    }
+    .entrada .subtitulo 
+    {
+        font-size: 1.1em;
+        height: 60px;
+    }
+    .entrada p 
+    {
+        font-size: 0.9em;
+    }
+    #entradas .cards
+    { 
+        width: 260%;
+    }
+    
+    .entrada
+    {
+        width: 20%;
+    }
+    .hrTitle 
+    {
+        display: none;
+    }
+}  
+
+/* TABLET*/
+
+@media only screen and (max-width: 768px){
+    .hrTitle 
+    {
+        display: none;
+    }
+    .infoTextoTitulo 
+    {
+        line-height: 25px;
+    }
+    #entradas 
+    {
+        margin: 0px 30px;
+        border: solid 30px #fff;
+    }
+    #entradas .cards
+    { 
+        width: 500%;
+        margin: 60px 0px;
+    }
+    .entrada
+    {
+        width: 20%;
+    }
+    .entrada p
+    {
+        width: 80%;
+    }
+    .arrow #izquierda 
+    {
+        font-size: 2.9rem;
+    }
+    .arrow #derecha 
+    {
+        font-size: 2.9rem;
+    }
+}
+
+/* MOVIL GRANDE */
+  
+@media only screen and (max-width: 501px){
+    #entradas 
+    {
+        margin: 0px 20px;
+        border: solid 20px #fff;
+    }
+    .infoTextoTitulo 
+    {
+        font-size: 20px;
+    }
+    .infoTextoTitulo span 
+    {
+        font-size: 18px;
+    }
+    .entrada .subtitulo 
+    {
+        font-size: 0.9em;
+    }
+} 
+
+

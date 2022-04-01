@@ -1,0 +1,167 @@
+/* Estilos predefinidos en esta pagina */
+
+.hrTitle
+{
+    width: 230px;
+    border-color: var(--amarillo);
+    margin-bottom: 20px;
+}
+
+/* Formulario registro */
+
+#registro
+{
+    background-color: #fff;
+    padding: 80px 50px;
+    margin: 0px 50px;
+}
+
+#registro .tituloSeccion
+{
+    font-size: 2em;
+}
+
+.form-registro
+{
+    margin-left:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datosContacto
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.form-registro .input-50, .input-100
+{
+    width: 100%;
+    height: 60px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    border: 1px solid var(--azulCorporativo);
+}
+
+
+input::placeholder
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding-left: 8px;
+}
+
+input:focus
+{
+    border-style: none;
+}
+
+.btn-enviar
+{
+    border: 2px solid var(--azulCorporativo);
+    padding: 10px;
+    border-top-right-radius: 20px;
+    margin: 30px 0px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: var(--azulCorporativo);
+    text-decoration: none;
+}
+
+.btn-enviar:hover 
+{
+    color: var(--hover);
+} 
+
+
+.datosContacto .mensaje
+{
+    font-size: 1.2em;
+}
+
+.datosContacto .mensaje a 
+{
+    text-decoration: none;
+    color: var(--azulCorporativo);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.datosContacto .mensaje a:hover 
+{
+    color: var(--hover);
+}
+
+
+/* MEDIA QUERIES */
+
+
+
+/* MEDIDAS MENU NAV Y FOOTER DESKTOP O LAPTOP GRANDE*/
+
+/* @media only screen and (max-width: 1500px) {
+
+  No se aplican cambios en esta medida
+
+} */
+
+
+
+/*  MEDIDAS INTERMEDIAS ENTRE DESKTOP Y TABLET*/
+
+@media only screen and (max-width: 1150px)
+{
+    .datosContacto 
+    {
+        width: 60%;
+    }
+}
+
+/* TABLET*/
+
+@media only screen and (max-width: 768px){
+    #registro 
+    {
+        padding: 80px 30px;
+        margin: 0px 30px;
+    }
+    .form-registro
+    {
+        margin-left: 0px;
+    }
+    .datosContacto 
+    {
+        width: 60%;
+    }
+    .datosContacto .mensaje
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* MOVIL GRANDE */
+  
+@media only screen and (max-width: 501px) {
+    #registro
+    {
+        padding: 80px 15px;
+        margin: 0px 15px;
+    }
+    .datosContacto 
+    {
+        width: 80%;
+    }
+    .form-registro .input-50 
+    {
+        height: 50px;
+    }
+    .datosContacto .mensaje 
+    {
+        font-size: 1em;
+    }
+}

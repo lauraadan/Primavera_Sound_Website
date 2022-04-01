@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Zona de metadatos  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto realizado dentro de la asignatura de Proyectos de Gráfica Interactiva, Escola Llotja">
+    <meta name="keywords" content="primaverasound, website, festival, Barcelona, web">
+    <meta name="author" content="Laura Adán">
+    <meta name="copyright" content="Laura Adán">
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <!-- Hoja de estilos predefinidos (botones, header, footer, titulos...) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Hoja de estilos de la página -->
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Conexion a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="js/btnScroll.js"></script>
+    <script src="js/menuOculto.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="img/logoNuevo_02.png"/>
+    <!-- Script de Font Awesome para iconos -->
+    <script src="https://kit.fontawesome.com/44915d7dee.js" crossorigin="anonymous"></script>
+    <title>Primavera Sound | Home</title>
+</head>
+<body>
+
+<!-- ZONA DEL BOTON SCROLL -->
+
+<div id="top">
+    <a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
+</div>
+
+<!-- ZONA DEL NAVEGADOR -->
+
+<header id="navbar">
+
+    <nav id="barraMenu">
+
+        <ul id="menu">
+            
+            <li class="elemMenu"><a href="home.html" class="active">Home</a></li>
+            <li class="elemMenu"><a href="aboutUs.html">About PS</a></li>
+            <li class="elemMenu"><a href="programacion.html">Programación</a></li>
+            <li class="elemMenu"><a href="prensa.html">Prensa</a></li>
+            <li class="elemMenu"><a href="form-login.html">Foro</a></li>
+            <li class="elemMenu"><a href="contacto.html">Contacto</a></li>           
+        </ul>
+
+        <ul class="entradas">
+            <li class="elemBtn"><a href="entradas.html" class="btnEntradas">TICKETS</a></li>
+        </ul>
+        
+        <div class="hide">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>   
+
+</header>
+
+
+<!-- ZONA DE BANNER SUPERIOR -->
+
+<section class="banner">
+     <img src="img/home/background_banner.jpeg" alt="imagen Banner" class="imgBannerHome">
+     <div id="bg"></div>
+</section>
+
+<!--  ZONA DE CARTEL -->
+
+<section class="zonaCartel" id="zonaCartel">
+
+    <div class="contenedor-slider">  
+        <div class="slide-izquierdo"> 
+
+            <div style="background-color: #F49F88">  
+                <h1>Primavera<br>a la Ciutat</h1>  
+                <p style="color: #4a7b6c">Del 5 al 8 de junio</p>  
+            </div> 
+
+            <div style="background-color: #157575">  
+                <h1>Primavera Sound<br>2nd Weekend</h1>  
+                <p style="color: #F49F88">Del 9 al 11 de junio</p>  
+            </div>  
+
+            <div style="background-color: #657e85">  
+                <h1>Primavera Sound<br>1st Weekend</h1>  
+                <p style="color: #FFE598">Del 2 al 4 de junio</p>  
+            </div>  
+        </div>  
+
+        <div class="slide-derecho">  
+            <div style="background-image: url('img/home/PS01.jpeg');"></div>  
+            <div style="background-image: url('img/home/PS02.jpg');"></div>  
+            <div style="background-image: url('img/home/PCIUTAT.jpg');"></div>     
+        </div>  
+
+        <div class="accion-botones">  
+            <button class="bajar-button">  
+                <i class="fas fa-arrow-down"></i>  
+            </button>  
+
+            <button class="subir-button">  
+                <i class="fas fa-arrow-up"></i>  
+            </button>  
+        </div>  
+    </div>  
+</section>
+
+<!--  ZONA DE INFO + VIDEO PROMOCIONAL -->
+
+<section class="zonaInfo" id="zonaInfo">
+
+    <div class="infoVideo">
+        <video src="img/home/Video_promo.mp4" autoplay loop muted width="100%"></video>
+    </div>
+
+    <div class="infoTexto">
+        
+        <div class="infoTextoTitulo">
+            <h3>PRIMAVERA SOUND 2022</h3>
+            <h1>BARCELONA</h1>
+            <h4>Jun 2-12, 2022 Parc del Fòrum, ES</h4>
+        </div>
+
+        <div class="infoTextoParrafo">
+            <p>Todo empieza en Barcelona y todo acaba en Barcelona. Primavera Sound cierra su semana de viajes por el mundo añadiendo nuevos nombres a 
+                su histórica edición ampliada del próximo año. Tras el anuncio del cartel de Los Ángeles, los festivales de Santiago de Chile, 
+                Buenos Aires y Sao Paulo y las últimas noticias desde Oporto, las miradas vuelven a estar puestas en el espectáculo sin precedentes 
+                que convertirá a Barcelona en la capital mundial de la música del 2 al 12 de junio de 2022. <br> <br>
+                Once días repartidos entre el Parc del Fòrum, 
+                diferentes espacios de la ciudad y la playa de Sant Adrià de Besòs, más de 500 actuaciones para, por fin, celebrar el vigésimo aniversario 
+                de Primavera Sound. Todo a lo grande, incluida la respuesta del público: todos los tipos de abonos completos y entradas se 
+                agotaron en apenas diez días.</p>
+                <button class="btnMore"><a href="aboutUs.html">Leer más...</a></button>           
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ZONA DE ARTISTAS -->
+
+<section class="zonaArtistas" id="zonaArtistas">
+    
+    <div class="contArtistas">
+
+        <div class="one">ARTISTAS<span>Primavera Sound 2022</span>
+            <button class="btnArtistas"><a href="programacion.html" >Ver programación...</a></button>
+        </div>
+
+        <div class="two card">
+            <div class="layer">
+                <h1>Beach <span>House</span></h1>
+            </div>
+        </div>
+
+        <div class="three card">
+            <div class="layer">
+                <h1>Massive<br><span>Attack</span></h1>
+            </div>
+        </div>
+
+        <div class="four card">
+            <div class="layer">
+                <h1>Carolina<br><span>Durante</span></h1>
+            </div>
+        </div>
+
+        <div class="five card">
+            <div class="layer">
+                <h1>Charlie<span> XCX</span></h1>
+            </div>
+        </div>
+
+        <div class="six card">
+            <div class="layer">
+                <h1><span>Gorillaz</span></h1>
+            </div>
+        </div>
+
+        <div class="seven card">
+            <div class="layer">
+                <h1>Dua<span> Lipa</span></h1>
+            </div>
+        </div>
+
+        <div class="eight card">
+            <div class="layer">
+                <h1>Tame<span> Impala</span></h1>
+            </div>
+        </div>
+
+        <div class="nine card">
+            <div class="layer">
+                <h1>Yeah<span> Yeah</span><br>Yeahs</h1>
+            </div>
+        </div>
+
+        <div class="ten card">
+            <div class="layer">
+                <h1><span>Phoenix</span><br></h1>
+            </div>
+        </div>
+
+        <div class="eleven card">
+            <div class="layer">
+                <h1><span>Ashnikko</span><br></h1>
+            </div>
+        </div>
+
+        <div class="twelve card">
+            <div class="layer">
+                <h1><span>Perfume</span><br></h1>
+            </div>
+        </div>
+
+      </div>
+      
+</section>
+
+<!--  ZONA DE BANNER VIP -->
+
+<section class="zonaBannerVip" id="zonaBannerVip">
+
+  <div class="contenedorTextoBannerVip">
+    <div class="texto">
+        <h1>¿Quieres disfrutar de las mejores ventajas de tu experiencia <span>Primavera Sound?</span></h1>
+        <p>Descubre todo lo que te ofrece ser un Primavera Sound VIP y ver los conciertos en zonas exclusivas, tener descuentos en merchandising y mucho más...</p>
+    </div>
+    
+    <button class="btnMore"><a href="entradas.html">Ver tickets...</a></button>         
+  </div>
+
+  <div>
+    <img src="img/home/banner_vip.jpeg" alt="recinto Fòrum" class="imagen">
+  </div>
+
+</section>
+
+<!--  ZONA DE NOTICIAS IMPORTANTES -->
+
+<section class="zonaNoticias" id="zonaNoticias">
+    <div class="contNoticias">
+
+        <div class="uno"> NOTICIAS<br>DESTACADAS<span>Primavera Sound 2022</span> 
+        </div>
+
+        <div class="dos">
+            <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>21/02/2022</small>
+                <p><a href="https://www.primaverasound.com/es/news/celebra-la-vida-reposada-con-homeshake--concierto-en-barcelona-el-8-de-octubre" target="_blank">Celebra la vida reposada con Homeshake: concierto en Barcelona el 8 de octubre.</a></p>
+            </div>
+        </div>
+
+        <div class="tres">
+             <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>02/02/2022</small>
+                <p><a href="https://www.primaverasound.com/es/primavera-pro/consult-the-primavera-pro-2022-oracle-to-discover-the-future-of-the-music-industry" target="_blank">Consulta el oráculo de Primavera Pro 2022.</a></p>
+            </div>
+        </div>
+        <div class="cuatro">
+             <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>02/02/2022</small>
+                <p><a href="https://www.primaverasound.com/es/news/nitsa-club-presenta-un-impactante-avance-de-su-programacion-para-2022-y-refuerza-su-alianza-con-primavera-sound" target="_blank">Nitsa Club presenta un impactante avance de su programación para el 2022.</a></p>
+            </div>
+        </div>
+
+        <div class="cinco">
+             <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>31/01/2022</small>
+                <p><a href="https://www.primaverasound.com/es/news/the-smile--el-nuevo-proyecto-de-thom-yorke-y-jonny-greenwood--se-suman-al-cartel-de-primavera-sound-2022-y-confirman-conciertos-en-barcelona-y-madrid-en-julio" target="_blank">The Smile, el nuevo proyecto de Thom Yorke y Jonny Greenwood.</a></p>
+            </div>
+        </div>
+
+        <div class="seis">
+             <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>10/02/2022</small>
+                <p><a href="https://www.primaverasound.com/es/porto/nos-primavera-sound-porto-expands-its-line-up-with-four-new-additions" target="_blank">NOS Primavera Sound Porto amplía su cartel.</a></p>
+            </div>
+        </div>
+
+        <div class="siete">
+             <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>15/12/2021</small>
+                <p><a href="https://www.primaverasound.com/es/news/se-pone-en-marcha-la-fundacio-primavera-sound--un-proyecto-para-la-integracion-social-gracias-a-la-musica" target="_blank">Se pone en marcha la Fundació Primavera Sound.</a></p>
+            </div>
+        </div>
+
+        <div class="ocho">
+             <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>17/01/2022</small>
+                <p><a href="https://www.primaverasound.com/es/primavera-pro/clara-peya-and-jennderfucker-on-mental-health-and-music" target="_blank">Clara Peya y Jennderfucker hablan sobre su salud mental y música.</a></p>
+            </div>
+        </div>
+        <div class="nueve">
+             <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>07/11/2021</small>
+                <p><a href="https://www.primaverasound.com/es/primavera-pro/lets-talk-about-the-ecological-footprint-from-a-musical-perspective" target="_blank">Hablemos de la huella ecológica con perspectiva musical.</a></p>
+            </div>
+        </div>
+
+        <div class="diez">
+             <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>28/10/2021</small>
+                <p><a href="https://www.primaverasound.com/es/news/20-aniversario-de-primavera-sound--acontecimiento-de-especial-interes" target="_blank">El 20º Aniversario del Primavera Sound: Averigua todo lo que tenemos preparado...</a></p>
+            </div>
+        </div>
+
+        <div class="once">
+             <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>10/10/2021</small>
+                <p><a href="https://www.primaverasound.com/es/primavera-pro/infectious-earworms--composing-soundtracks-for-video-games" target="_blank">Infectious earworms: Componiendo bandas sonoras para videojuegos.</a></p>
+            </div>
+        </div>
+
+        <div class="doce">
+             <div class="divImg"></div>
+            <div class="contNoticia">
+                <small>09/10/2021</small>
+                <p><a href="https://www.primaverasound.com/es/news/new-primavera-sound-destination--escala-3-de-3--sao-paulo-se-suma-a-la-ruta-de-festivales-de-primavera-sound-para-2022" target="_blank">New Primavera Sound destination, <br>escala 3 (de 3).</a></p>
+            </div>
+        </div>
+      </div>
+</section>
+
+<!--  ZONA DEL FOOTER -->
+
+<section class="footer" id="footer">
+  <div class="contain">
+    
+    <div class="col">
+        <h1 class="titleCol">Primavera Sound</h1>
+        <hr class="hrFooter">
+        <ul>
+            <li><a href="https://www.primaverasound.com/es/barcelona" target="_blank">Primavera Sound Barcelona</a></li>
+            <li><a href="https://www.primaverasound.com/es/los-angeles" target="_blank">Primavera Sound L.A</a></li>
+            <li><a href="https://www.primaverasound.com/es/santiago" target="_blank">Primavera Sound Santiago de Chile</a></li>
+            <li><a href="https://www.primaverasound.com/es/buenos-aires" target="_blank">Primavera Sound Buenos Aires</a></li>
+            <li><a href="https://www.primaverasound.com/es/sao-paulo" target="_blank">Primavera Sound Sao Paulo</a></li>
+        </ul>
+    </div>
+    
+    <div class="col">
+        <h1 class="titleCol">Servicios</h1>
+        <hr class="hrFooter">
+        <ul>
+            <li><a href="https://www.primaverasound.com/es/tours" target="_blank">Primavera Tours</a></li>
+            <li><a href="https://www.primaverasound.com/es/radio" target="_blank">Radio Primavera Sound</a></li>
+            <li><a href="https://www.primaverasound.com/es/primavera-pro" target="_blank">Primavera Pro</a></li>
+            <li><a href="https://www.primaverasound.com/es/primavera-labels" target="_blank">Primavera Labels</a></li>
+            <li><a href="https://wearevampire.com/" target="_blank">Vampire Studio</a></li>
+        </ul>
+    </div>
+
+    <div class="col">
+        <h1 class="titleCol">Políticas</h1>
+        <hr class="hrFooter">
+        <ul>
+            <li><a href="https://www.primaverasound.com/es/primavera-sound-festival-terms-and-conditions" target="_blank">Aviso Legal</a></li>
+            <li><a href="https://www.primaverasound.com/es/primavera-sound-festival-terms-and-conditions" target="_blank">Términos y condiciones</a></li>
+            <li><a href="https://www.primaverasound.com/es/cookies-policy" target="_blank">Politica de Cookies</a></li>
+            <li><a href="https://www.primaverasound.com/es/privacy-policy" target="_blank">Politica de Privacidad</a></li>
+            <li><a href="https://www.primaverasound.com/es/user-register-conditions-for-primavera-sound" target="_blank">Politica de registro</a></li>
+        </ul>
+    </div>
+    
+
+    <div class="col social">
+        <h1 class="titleCol">Social</h1>
+        <hr class="hrFooter">
+        <ul>
+            <li><a href="https://twitter.com/Primavera_Sound" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/primaverasoundfestivals" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/primavera_sound/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/c/primaverasound" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://open.spotify.com/user/primaverasoundfestival?si=Gz9-CxONSESlF_art5K4rg&nd=1" target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
+        </ul>
+        <div class="newsletter">
+            <h1 class="titleNewsletter">Suscríbete a nuestra newsletter</h1>
+            <hr class="hrFooter">
+            <input class="suscribir" type="text" placeholder=" Introduce aquí tu email">
+            <button class="btnSuscribir" onclick="alertSuscribirse();">Suscribirme</button>
+         </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONA DE SCRIPS -->
+
+
+<!-- Script para slider vertical -->
+
+<script src="js/home-slider.js"></script>
+
+<!-- Script para Alert boton Footer - Suscribirse -->
+
+<script>
+    function alertSuscribirse(){
+        alert("¡Te has suscrito correctamente!");
+    }
+</script>
+
+<!-- Script de menu nav responsive -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/menu_nav_responsive.js"></script>
+
+
+<!--  Script para la transformación de la imagen por scroll en el banner -->
+
+<script src="js/scroll_banner.js"></script>
+
+
+
+</body>
+</html>
