@@ -835,7 +835,7 @@
   }
   .banner
   {
-    height: 615px;
+    height: 760px;
   }
   .slide-izquierdo h1 {
     font-size: 1.8rem;
@@ -888,7 +888,7 @@
   }
   #zonaArtistas
   {
-    padding: 30px 20px;
+    padding: 50px 20px;
   }
   #zonaBannerVip
   {
@@ -900,7 +900,7 @@
   }
   #zonaNoticias
   {
-    padding: 30px 20px;
+    padding: 50px 20px;
   }
   .contNoticias > div 
   {
@@ -908,7 +908,7 @@
   }
   .contNoticias .uno 
   {
-    height: 180px !important;
+    height: 220px !important;
   }
   .contNoticia p {
     font-size: 1.2rem;

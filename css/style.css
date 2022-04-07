@@ -547,20 +547,21 @@ transition: .2s;
   /*Responsive nav menu*/
   #barraMenu
   {
-    height: 180px;
+    height: 230px;
     text-align: left;
+    padding: 0px 20px;
   }
   .entradas
   {
-    left:7%;
+    left:9%;
   }
   .elemMenu > a 
    {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .elemBtn > a 
   {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .btnEntradas
   {
@@ -572,10 +573,11 @@ transition: .2s;
     width: 100%;
     text-align: left;
   }
-  #barraMenu ul 
+  .elemMenu
   {
-    display: none;
+    margin-bottom: 7px;
   }
+
   .hide
   {
     display: block;
@@ -583,6 +585,7 @@ transition: .2s;
     margin: auto;
   }
 
+  /*  Responsive slide vertical. */
   .slide-izquierdo, .accion-botones
   {
     display: none;
@@ -594,8 +597,6 @@ transition: .2s;
     left: 0 !important;
     width: 100% !important;
   }
-
-
 
   /* Responsive banner */
   .banner h1 
@@ -629,7 +630,7 @@ transition: .2s;
   }
   .titleNewsletter
   {
-    width: 70%;
+    width: 80%;
   }
   #top i
   {
