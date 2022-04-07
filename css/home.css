@@ -886,6 +886,23 @@
   {
     height: 850px;
   }
+  /*  Responsive slide vertical. */
+  .slide-izquierdo, .accion-botones
+  {
+    display: none;
+  }
+
+  .slide-derecho
+  {
+    height: 50% !important;
+    left: 0 !important;
+    width: 100% !important;
+  }
+
+  .slide-derecho > div 
+  {
+    background-size: 100%;
+  }
   .infoTexto
   {
     padding: 20px;
