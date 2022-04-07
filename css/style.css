@@ -362,8 +362,6 @@ transition: .2s;
 
 /* MEDIA QUERIES */
 
-
-
 /* MEDIDAS MENU NAV Y FOOTER DESKTOP O LAPTOP GRANDE*/
 
 @media only screen and (max-width: 1500px) {
@@ -533,7 +531,7 @@ transition: .2s;
   {
     width: 100%;
   }
-  /* Activacion del boton scroll a partir de -768px */
+  /* Activacion del boton back to top a partir de -834px */
   #top
   {
     display: block;
@@ -620,6 +618,7 @@ transition: .2s;
   {
     width: 80%;
   }
+  /* Boton back to top */
   #top i
   {
     font-size: 2.7em;
