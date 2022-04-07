@@ -265,7 +265,8 @@
     #entradas 
     {
         margin: 0px 20px;
-        border: solid 20px #fff;
+        border: solid 15px #fff;
+        padding-top: 20px;
     }
     .hrTitle
     {
