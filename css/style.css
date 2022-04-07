@@ -37,15 +37,15 @@ body
 #top
 {
 	position: fixed;
-	bottom: 40px;
-	right: 50px;
+	bottom: 10px;
+	right: 20px;
   z-index: 1000000;
   display: none;
 }
 
 #top i
 {
- font-size: 3.8em;
+ font-size: 3.3em;
  color: #67B2B5;
 }
 
@@ -455,7 +455,8 @@ transition: .2s;
   {
     height: 180px;
     text-align: left;
-    background-color: transparent;
+    background-color: #00000042;
+    font-weight: 500;
   }
   .entradas
   {
@@ -463,11 +464,11 @@ transition: .2s;
   }
   .elemMenu > a 
    {
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
   .elemBtn > a 
   {
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
   .elemMenu .active
   {
@@ -548,26 +549,24 @@ transition: .2s;
   {
     height: 180px;
     text-align: left;
-    background-color: transparent;
   }
   .entradas
   {
-    left:10%;
+    left:7%;
   }
   .elemMenu > a 
    {
-    font-size: 0.9em;
+    font-size: 1.2em;
   }
   .elemBtn > a 
   {
-    font-size: 0.9em;
+    font-size: 1.2em;
   }
   .btnEntradas
   {
     border-top-left-radius: 0px;
-    border-top-right-radius: 15px;
+    border-top-right-radius: 10px;
   }
-
   #menu ul li 
   {
     width: 100%;
@@ -583,7 +582,21 @@ transition: .2s;
     font-size: 2.2em;
     margin: auto;
   }
-  
+
+  .slide-izquierdo, .accion-botones
+  {
+    display: none;
+  }
+
+  .slide-derecho
+  {
+    height: 50% !important;
+    left: 0 !important;
+    width: 100% !important;
+  }
+
+
+
   /* Responsive banner */
   .banner h1 
   {
@@ -614,9 +627,13 @@ transition: .2s;
   {
     font-size: 17px;
   }
+  .titleNewsletter
+  {
+    width: 70%;
+  }
   #top i
   {
-    font-size: 3em;
+    font-size: 2.7em;
   } 
   
 }

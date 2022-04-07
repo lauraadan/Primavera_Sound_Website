@@ -830,12 +830,12 @@
 @media only screen and (max-width: 768px) {
   #bg 
   {
-    height: 500px;
+    height: 650px;
     background-size: 250px;
   }
   .banner
   {
-    height: 500px;
+    height: 615px;
   }
   .slide-izquierdo h1 {
     font-size: 1.8rem;
@@ -882,16 +882,36 @@
 /* MOVIL GRANDE */
   
 @media only screen and (max-width: 501px) {
+  .infoTexto
+  {
+    padding: 20px;
+  }
+  #zonaArtistas
+  {
+    padding: 30px 20px;
+  }
+  #zonaBannerVip
+  {
+    padding: 30px 20px;
+  }
   .contenedorTextoBannerVip
   {
     width: 90%;
   }
+  #zonaNoticias
+  {
+    padding: 30px 20px;
+  }
+  .contNoticias > div 
+  {
+    height: 220px;
+  }
   .contNoticias .uno 
   {
-    height: 270px !important;
+    height: 180px !important;
   }
   .contNoticia p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 10px;
   }
 }
