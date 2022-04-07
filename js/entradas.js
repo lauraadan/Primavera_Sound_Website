@@ -8,14 +8,14 @@ var offsideColumns;
 
 
 function updateDisplacementValue(){
-	if (window.matchMedia("(max-width: 768px)").matches) {
-	  console.log("-768");
+	if (window.matchMedia("(max-width: 834px)").matches) {
+	  console.log("-834");
 	  displacementValue = 100;
 	  offsideColumns=4;
 	}
 
 	else {
-	  console.log("+768");
+	  console.log("+834");
 	  displacementValue = 50;
 	  offsideColumns=3;
 	}
@@ -65,18 +65,18 @@ var offsideColumns2;
 
 function updateDisplacementValue2(){
 	if (window.matchMedia("(max-width: 576px)").matches) {
-	  console.log("-996");
+	  console.log("-834");
 	  displacementValue2 = 100;
 	  offsideColumns2=4;
 
-	} else if (window.matchMedia("(max-width: 996px)").matches){
-	  console.log(">576 - <996");
-	  displacementValue2 = 50;
+	} else if (window.matchMedia("(max-width: 834px)").matches){
+	  console.log(">576 - <834");
+	  displacementValue2 = 100;
 	  offsideColumns2=3;
 	}
 
 	else {
-	  console.log("+996");
+	  console.log("+834");
 	  displacementValue2 = 78.5;
 	  offsideColumns2=2;
 	}
@@ -124,18 +124,18 @@ var offsideColumns3;
 
 function updateDisplacementValue3(){
 	if (window.matchMedia("(max-width: 576px)").matches) {
-	  console.log("-996");
+	  console.log("-834");
 	  displacementValue3 = 100;
 	  offsideColumns3=4;
 
-	} else if (window.matchMedia("(max-width: 996px)").matches){
-	  console.log(">576 - <996");
+	} else if (window.matchMedia("(max-width: 834px)").matches){
+	  console.log(">576 - <834");
 	  displacementValue3 = 50;
 	  offsideColumns3=3;
 	}
 
 	else {
-	  console.log("+996");
+	  console.log("+834");
 	  displacementValue3 = 78.5;
 	  offsideColumns3=2;
 	}
@@ -183,18 +183,18 @@ var offsideColumns4;
 
 function updateDisplacementValue4(){
 	if (window.matchMedia("(max-width: 576px)").matches) {
-	  console.log("-996");
+	  console.log("-834");
 	  displacementValue4 = 100;
 	  offsideColumns4=4;
 
-	} else if (window.matchMedia("(max-width: 996px)").matches){
-	  console.log(">576 - <996");
+	} else if (window.matchMedia("(max-width: 834px)").matches){
+	  console.log(">576 - <834");
 	  displacementValue4 = 50;
 	  offsideColumns4=3;
 	}
 
 	else {
-	  console.log("+996");
+	  console.log("+834");
 	  displacementValue4 = 78.5;
 	  offsideColumns4=2;
 	}

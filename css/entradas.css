@@ -241,9 +241,10 @@
         width: 500%;
         margin: 60px 0px;
     }
-    .entrada
+    #entradas .entrada
     {
         width: 20%;
+        box-shadow: none;
     }
     .entrada p
     {

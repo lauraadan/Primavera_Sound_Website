@@ -3,7 +3,7 @@
 let ubicacionPrincipal = window.pageYOffset;
 window.onscroll = function () {
 	
-		if (!window.matchMedia("(max-width: 768px)").matches) {
+		if (!window.matchMedia("(max-width: 834px)").matches) {
 	  		console.log("melon");
 			let Desplazamiento_Actual = window.pageYOffset;
 			if(ubicacionPrincipal >= Desplazamiento_Actual){
