@@ -349,6 +349,18 @@ color: var(--hover2);
 /* MOVIL GRANDE */
   
 @media only screen and (max-width: 501px) {
+    .infoTextoTitulo h1 
+    {
+        font-size: 1.4em;
+    }
+    .infoTextoTitulo h4
+    {
+        font-size: 18px;
+    }
+    .hrTitle
+    {
+        width: 230px;
+    }
     #programacion 
     {
         padding: 80px 15px;
