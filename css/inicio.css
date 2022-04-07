@@ -55,9 +55,9 @@ body
 
 /* MEDIA QUERIES */
 
-/* TABLET */
-  
-@media only screen and (max-width: 996px) 
+/* TABLET - ESPECIFICAMENTE IPAD PRO 11 PULGADAS*/
+
+@media only screen and (max-width: 834px) {
 {
 	.ondulado span 
 	{

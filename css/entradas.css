@@ -224,9 +224,9 @@
     }
 }  
 
-/* TABLET*/
+/* TABLET - ESPECIFICAMENTE IPAD PRO 11 PULGADAS*/
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 834px) {
     .infoTextoTitulo 
     {
         line-height: 25px;

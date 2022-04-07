@@ -307,9 +307,9 @@ color: var(--hover2);
 
 
 
-/* TABLET*/
+/* TABLET - ESPECIFICAMENTE IPAD PRO 11 PULGADAS*/
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 834px) {
     #programacion
     {
         padding: 80px 30px;
