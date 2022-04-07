@@ -348,7 +348,7 @@ estructura al hacerse responsive */
 @media only screen and (max-width: 501px) {
     #aboutUs
     {
-        padding: 50px 30px;
+        padding: 50px 20px;
     }
     .hrTitle
     {
@@ -360,7 +360,7 @@ estructura al hacerse responsive */
     }
     .infoTextoTitulo h4
     {
-        font-size: 16px;
+        font-size: 18px;
     }
     .infoTextoMetodos
     {
@@ -368,7 +368,11 @@ estructura al hacerse responsive */
     }
     .infoTextoMetodos p 
     {
-        font-size: 16px;
+        font-size: 18px;
+    }
+    .infoTextoParrafo p
+    {
+        font-size: 18px;
     }
     .tituloWeekend, .subtituloWeekend
     {
@@ -386,6 +390,8 @@ estructura al hacerse responsive */
     .contImgAlojamiento h1 
     {
         font-size: 1.3rem;
+        width: 80%;
+    }
     }
     .imgAlojamiento01, .imgAlojamiento02, .imgAlojamiento03
     {
