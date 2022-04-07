@@ -882,6 +882,10 @@
 /* MOVIL GRANDE */
   
 @media only screen and (max-width: 501px) {
+  #bg
+  {
+    height: 850px;
+  }
   .infoTexto
   {
     padding: 20px;
