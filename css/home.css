@@ -891,13 +891,13 @@
   {
     display: none;
   }
-
   .slide-derecho
   {
     height: 50% !important;
     left: 0 !important;
     width: 100% !important;
   }
+  
   .infoTexto
   {
     padding: 20px;

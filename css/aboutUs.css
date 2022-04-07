@@ -346,21 +346,37 @@ estructura al hacerse responsive */
 /* MOVIL GRANDE */
   
 @media only screen and (max-width: 501px) {
+    #aboutUs
+    {
+        padding: 50px 30px;
+    }
     .hrTitle
     {
-        width: 300px;
+        width: 230px;
     }
     .infoTextoTitulo h1 
     {
-        font-size: 1.7em;
+        font-size: 1.4em;
+    }
+    .infoTextoTitulo h4
+    {
+        font-size: 16px;
     }
     .infoTextoMetodos
     {
         margin: 10px 50px 0px 0px;
     }
+    .infoTextoMetodos p 
+    {
+        font-size: 16px;
+    }
     .tituloWeekend, .subtituloWeekend
     {
-        font-size: 1.4rem !important;
+        font-size: 1.1rem !important;
+    }
+    .imgAlojamiento01, .imgAlojamiento02, .imgAlojamiento03
+    {
+        height: 50vh;
     }
     .contImgAlojamiento
     {
@@ -369,7 +385,7 @@ estructura al hacerse responsive */
     }
     .contImgAlojamiento h1 
     {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .imgAlojamiento01, .imgAlojamiento02, .imgAlojamiento03
     {
