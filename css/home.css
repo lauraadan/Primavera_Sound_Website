@@ -898,11 +898,6 @@
     left: 0 !important;
     width: 100% !important;
   }
-
-  .slide-derecho > div 
-  {
-    background-size: 100%;
-  }
   .infoTexto
   {
     padding: 20px;
