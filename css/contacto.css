@@ -187,6 +187,16 @@ No se aplican medidas responsive en esta medida
     {
         margin-right: 5px !important;
     }
+    input[type="checkbox" i] 
+    {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+    label
+    {
+        font-size: 10px;
+    }
 } 
 
 

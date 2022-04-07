@@ -13,7 +13,7 @@
 {
     width: 230px;
     border-color: var(--amarillo);
-    margin-bottom: 5px;
+    margin: 5px 0px;
 }
 
 
@@ -191,10 +191,6 @@
 /* MEDIDAS MENU NAV Y FOOTER DESKTOP O LAPTOP GRANDE*/
 
  @media only screen and (max-width: 1500px) {
-     .hrTitle
-     {
-         width:190px;
-     }
      .infoTextoTitulo
      {
          font-size: 23px;
@@ -226,19 +222,11 @@
     {
         width: 20%;
     }
-    .hrTitle 
-    {
-        display: none;
-    }
 }  
 
 /* TABLET*/
 
 @media only screen and (max-width: 768px){
-    .hrTitle 
-    {
-        display: none;
-    }
     .infoTextoTitulo 
     {
         line-height: 25px;
@@ -279,9 +267,21 @@
         margin: 0px 20px;
         border: solid 20px #fff;
     }
+    .hrTitle
+    {
+        width: 230px;
+    }
     .infoTextoTitulo 
     {
         font-size: 20px;
+    }
+    .infoTextoTitulo h1
+    {
+        font-size: 1.4em;
+    }
+    .infoTextoTitulo h4
+    {
+        font-size: 18px;
     }
     .infoTextoTitulo span 
     {
@@ -290,6 +290,18 @@
     .entrada .subtitulo 
     {
         font-size: 0.9em;
+    }
+    .entrada p 
+    {
+        font-size: 0.75em;
+    }
+    .arrow #izquierda 
+    {
+        font-size: 2.4rem;
+    }
+    .arrow #derecha 
+    {
+        font-size: 2.4rem;
     }
 } 
 
